@@ -3,5 +3,5 @@
         "src"
     ],
     "ext": "ts,json",
-    "exec": "node build.js && npx http-server"
+    "exec": "node build.js"
 }

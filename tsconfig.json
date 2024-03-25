@@ -1,16 +1,18 @@
 {
     "compilerOptions": {
-        "target": "ES2015",
-        "module": "node16",
+        "target": "ES5",
+        "module": "CommonJS",
         "lib": [
-            "ES2022"
+            "ES2015",
+            "DOM"
         ],
-        "moduleResolution": "node16",
+        "moduleResolution": "Node",
         "rootDir": ".",
         "outDir": "build",
         "allowSyntheticDefaultImports": true,
         "importHelpers": true,
         "sourceMap": true,
+        "forceConsistentCasingInFileNames": false,
         "noImplicitThis": false,
         "strictNullChecks": true
     },
