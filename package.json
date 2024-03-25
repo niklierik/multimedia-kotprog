@@ -1,0 +1,32 @@
+{
+    "name": "multimedia-kotprog",
+    "version": "1.0.0",
+    "scripts": {
+        "clean": "rimraf build tmp",
+        "prebuild": "npm run lint",
+        "build": "tsc -p tsconfig.json",
+        "dev": "tsc -w -p tsconfig.json",
+        "lint": "eslint . --ext .ts --ext .mts",
+        "prettier": "prettier --config .prettierrc --write ."
+    },
+    "type": "module",
+    "author": "Nikli Erik",
+    "dependencies": {
+        "browserify": "^17.0.0",
+        "http-server": "^14.1.1",
+        "nodemon": "^3.1.0",
+        "tsify": "^5.0.4",
+        "tslib": "~2.6"
+    },
+    "devDependencies": {
+        "@types/node": "~20",
+        "@typescript-eslint/eslint-plugin": "~6.15",
+        "@typescript-eslint/parser": "~6.15",
+        "eslint": "~8.56",
+        "eslint-config-prettier": "~9.1",
+        "prettier": "~3.1",
+        "rimraf": "~5.0",
+        "ts-api-utils": "~1.0",
+        "typescript": "~5.3"
+    }
+}
